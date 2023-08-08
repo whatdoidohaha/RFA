@@ -12,10 +12,10 @@
 # compactness.
 #
 # For each site-combination, this script only models the effect corresponding to
-# the second state in every site. Otherwise, it is identical to the example RFA
-# in that reference-free effects and nonspecific epistasis are jointly inferred
-# using an exact but slow algorithm. For a fast, approximate inference, consult
-# the example RFA-binary-fast.
+# the second state in every site. As in the example 'RFA', reference-free
+# effects and nonspecific epistasis are jointly inferred using an exact but slow
+# algorithm. For a fast, approximate inference on binary genotype spaces, check
+# the example 'RFA-binary-fast'.
 #
 # Written in R version 4.3.1.
 # Requires R packages lbfgs (1.2.1.2).
