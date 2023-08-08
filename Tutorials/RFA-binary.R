@@ -24,7 +24,7 @@
 # Settings (recommended not to change in a run) ---------------------------
 
 # Set working directory.
-setwd('/Users/yeonwoopark/Desktop/RFA/Examples/')
+setwd('/Users/yeonwoopark/Desktop/RFA/Tutorials/')
 
 # Source the script RFA-binary-functions.R to import function definitions.
 source('../Scripts/RFA-binary-functions.R')
