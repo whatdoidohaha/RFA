@@ -7,8 +7,8 @@
 # generalized linear regression using the sigmoid as link function. The highly
 # optimized R package glmnet makes this inference fast and robust. Once the
 # reference-free effects are inferred, the sigmoid parameters can be optimized
-# with the effects fixed This two-step procedure can be iterated until the
-# parameters stabilize.
+# with the effects fixed. This two-step procedure can be iterated until the 
+# model fit no longer increases.
 #
 # We recommend first performing unregularized regression to identify the optimal
 # sigmoid parameters. This may be possible using a first-order reference-free
