@@ -1,0 +1,16 @@
+Aakre C.D., et al., Evolving New Protein-Protein Interaction Specificity through Promiscuous Intermediates. Cell 163(3):594-606 (2015).
+
+Four sites in the protein ParD3 mutated and assayed for binding to two proteins, ParE2 and ParE3, in bulk growth competition assay.
+
+Only a subset of possible mutant amino acids sampled; total 9,360 variants.
+
+Wild type genotype: LWDK (row 1,298).
+
+Sampling:
+
+ParE2: 9323/9360 (99.6%)
+ParE3: 9194/9360 (98.2%)
+
+Two replicate experiments; r2 = 0.94 for ParE2 and 0.98 for ParE3.
+
+Amino acids numbered by the alphabetical order of the single-letter abbreviation.
