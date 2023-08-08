@@ -14,7 +14,7 @@
 # model may take days. In addition, we find that the optimizer may get stuck in
 # local optima when the fraction of genotypes in the dynamic range of
 # measurement is very small. An approximate optimization that is faster and more
-# robust yet largely retains the accuracy is presented in the example RFA-fast.
+# robust yet largely retains the accuracy is presented in the example 'RFA-fast'.
 #
 # Written in R version 4.3.1.
 # Requires R packages abind (1.4-5), lbfgs (1.2.1.2), and Matrix (1.6-0).
