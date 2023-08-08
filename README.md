@@ -16,7 +16,10 @@ We provide tutorials for four types of analyses.
 
 **RFA-binary-fast:** The fast, approximate inference in **RFA-fast** is performed specifically for binary genotype spaces.
 
-We provide three published datasets for tutorials. The **avGFP** dataset comprehensively samples a binary genotype space over 13 sites in a fluorescent protein (see the notes in each dataset directory for citation and more detail). The phenotype is the average fluorescence at two wavelengths. The **CR9114-B** dataset is a near-complete sample of a binary genotype space over 16 sites in an antibody. The phenotype is the affinity towards the influenza strain B hemagglutinin. The **ParD3-ParE3** dataset is a near-complete sample of a genotype space over four sites in the bacterial antitoxin protein ParD3. The number of states varies across sites from 6 to 12. The phenotype is the absolute fitness conferred by binding to the toxin ParE3.
+We provide three published datasets for tutorials. The **avGFP** dataset comprehensively samples a binary genotype space over 13 sites in a fluorescent protein (see the notes in each dataset directory for citation and more detail). The phenotype is the average fluorescence at two wavelengths. The **CR9114-B** dataset is a near-complete sample of a binary genotype space over 16 sites in an antibody. The phenotype is the affinity towards the influenza strain B hemagglutinin. Only 0.1% of genotypes lie above the lower phenotype bound of 6. The **ParD3-ParE3** dataset is a near-complete sample of a genotype space over four sites in the bacterial antitoxin ParD3. The number of states varies across sites from 6 to 12. The phenotype is the absolute fitness conferred by binding to the toxin ParE3.
 
-## Notes in model interpretation
+## Notes on model interpretation
+
+
+
 
