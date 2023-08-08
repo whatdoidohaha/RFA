@@ -1,9 +1,6 @@
 # Reference-free analysis of genetic architecture
 
-Here we provide 
-
-Reference-free analysis of genetic architecture
-
+Here we provide scripts and tutorials for performing reference-free analysis on experimental data. The directory *Tutorials* illustrates reference-free analysis by providing example datasets and annotated workflows (read the section **Tutorials** below for more information). The directory *Scripts* contains the function implementations, which we recommend accessing through the annotated workflows in *Tutorials*.
 
 ## Tutorials
 We provide tutorials for four types of analyses.
