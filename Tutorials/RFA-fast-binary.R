@@ -101,7 +101,7 @@ export_model('model.txt', n, q_list, site_combn, model)
 # The exported model can be imported:
 # model <- import_model('model.txt')
 # This creates the following global variables:
-#   n, q_list, site_combn, nonspec_type
+#   n, q_list, site_combn, nonspec_type, nonspec_param
 # Make sure these global variables are compatiable with the genotype and
 # phenotype data.
 
