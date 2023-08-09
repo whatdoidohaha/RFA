@@ -1,20 +1,19 @@
 
 # Here we illustrate a fast, approximate inference of reference-free effects
 # using an example genetic architecture consisting of four sites and a variable
-# number of states per site. Instead of jointly inferring nonspecific epistasis
-# with the reference-free effects, this script asks the user to specify a
-# sigmoid function for modeling nonspecific epistasis. It then performs a
-# generalized linear regression using the sigmoid as link function. The highly
+# number of states per site. Instead of jointly inferring reference-free
+# effects with nonspecific epistasis, this script asks the user to specify
+# the nonspecific epistasis parameters. It then performs a generalized linear
+# regression using the specified function as link function. The highly
 # optimized R package glmnet makes this inference fast and robust. Once the
-# reference-free effects are inferred, the sigmoid parameters can be optimized
-# with the effects fixed. This two-step procedure can be iterated to further
-# improve the model fit.
+# reference-free effects are inferred, the nonspecific epistasis parameters can
+# be optimized with the effects fixed. This two-step procedure can be iterated
+# to further improve the model fit.
 #
-# We recommend first performing unregularized regression to identify the optimal
-# sigmoid parameters. This may be possible using a first-order reference-free
-# model if it fits the data sufficiently well, or may require a second-order
-# model. We also provide functions for performing cross-validation and building
-# minimal reference-free models with maximal explanatory power.
+# We recommend first performing unregularized regression using the worflow RFA
+# to identify suitable nonspecific epistasis parameters. This may be possible
+# using a first-order reference-free model if it fits the data sufficiently well,
+# or may require a second-order model.
 #
 # Written in R version 4.3.1.
 # Requires R packages abind (1.4-5), glmnet (4.1-7), and lbfgs (1.2.1.2).
