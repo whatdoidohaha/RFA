@@ -17,6 +17,12 @@ We use three published datasets for our tutorials. The avGFP dataset comprehensi
 
 ## Notes on model interpretation
 
+As with any statistical analysis, care should be taken in the interpretation of inferred model. We describe several causes of misinterpretation and suggest safeguard practices.
 
+A common cause of model misinterpretation is overfitting. In the experimental datasets we have analyzed, third-order models show almost the same out-of-sample fit in cross-validation as second-order models, indicating that third-order effects make negligible phenotypic contributions. In some datasets, however, the third-order effects inferred within a third-order model are substantial, often explaining the majority of variance at the level of genetic score. This happens because the number of parameters in the third-order model is very large and the LASSO regularization is not fully sufficient to prevent overfitting. In these cases, cross-validation shows substantially better in-sample fit than out-of-sample fit. Several practices can safeguard against overfitting. First of all, overfitting should be diagnosed by comparing in-sample and out-of-sample fit during cross-validation; a better in-sample fit indicates overfitting. It is particularly helpful to compare the plot of predicted versus observed phenotype between in-sample and out-of-sample analysis.
+
+This behavior can also be exacerbated by a misfit in the nonspecific epistasis model, which causes the extra parameters in the third-order model to capture nonspecific epistasis. Misfit in the nonspecific epistasis model can also be diagnosed in the plot of predicted versus observed phenotype, which would 
+
+Besides overfitting, the limited dynamic range of measurement can also lead to misinterpretation. For example, an amino acid state may be incompatible with function and cause every genotype containing that state to be at the lower phenotype bound. We could tell that the state has a strongly negative effect on genetic score, but we would not be able to assign an exact value to its effect because any value that is sufficiently negative will imply the same phenotype. The exact value inferred by the model will therefore be be arbitrary or highly sensitive to regularization strength.
 
 
