@@ -1,6 +1,6 @@
 # Reference-free analysis of genetic architecture
 
-Reference-free analysis is a powerful formalism for analyzing the genetic architecture of proteins and nucleic acids. Here we provide scripts and tutorials for performing reference-free analysis on experimental data. The directory */Tutorials* provides annotated workflows and example datasets (read the section **Tutorials** below for more information). The directory */Scripts* contains the function implementations, which we recommend accessing through the annotated workflows.
+Reference-free analysis is a powerful formalism for analyzing the genetic architecture of proteins and nucleic acids. Here we provide scripts and tutorials for performing reference-free analysis on experimental data. The directory */Tutorials* provides annotated workflows and example datasets. The directory */Scripts* contains the function implementations, which we recommend accessing through the annotated workflows.
 
 ## Tutorials
 We provide tutorials for four workflows.
