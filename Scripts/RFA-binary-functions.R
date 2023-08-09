@@ -326,7 +326,7 @@ show_latent_space <- function(model, genotypes, y, site_combn) {
 }
 
 # Export model.
-export_model <- function(path, n, q_list, site_combn, nonspec_type, model) {
+export_model <- function(path, n, q_list, site_combn, model) {
   
   # path : character
   #   Path to the export file. 
