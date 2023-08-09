@@ -64,7 +64,7 @@ site_combn <- generate_site_combn(model_ord)
 model <- infer_model(genotypes, y, site_combn)
 # The following arguments are optional:
 #   lambda : Lasso penalty (default 0, no regularization)
-#   norm_e : Whether to enforce the zero-mean constraint on the returned 
+#   norm_e : Whether to enforce the zero-mean property on the returned 
 #     effects (default TRUE)
 #
 # A list with the following elements is returned:
