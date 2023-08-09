@@ -10,7 +10,7 @@
 # be optimized with the effects fixed. This two-step procedure can be iterated
 # to further improve the model fit.
 #
-# We recommend first performing unregularized regression using the worflow RFA
+# We recommend first performing unregularized regression in the worflow RFA
 # to identify suitable nonspecific epistasis parameters. This may be possible
 # using a first-order reference-free model if it fits the data sufficiently well,
 # or may require a second-order model.
