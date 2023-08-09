@@ -1,7 +1,7 @@
 
-# This is the fast, approximate implementation of reference-free analysis (as
-# described in the example RFA-fast) that is tailored for binary genotype spaces
-# (as described in RFA-binary).
+# This is the fast, approximate implementation of reference-free analysis that
+# is tailored for binary genotype spaces (comparing the worflows RFA-fast and
+# RFA-binary).
 #
 # Written in R version 4.3.1.
 # Requires R package glmnet (4.1-7).
