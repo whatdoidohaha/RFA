@@ -1,6 +1,6 @@
 
 # This is the fast, approximate implementation of reference-free analysis that
-# is tailored for binary genotype spaces (comparing the worflows RFA-fast and
+# is tailored for binary genotype spaces (combining the worflows RFA-fast and
 # RFA-binary).
 #
 # Written in R version 4.3.1.
