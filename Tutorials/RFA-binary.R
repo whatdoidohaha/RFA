@@ -95,7 +95,7 @@ show_latent_space(model, genotypes, y, site_combn)
 v_site_combn <- model$e[-1] ^ 2 / sum(model$e[-1] ^ 2)
 
 # The model can be exported.
-export_model('model.txt', n, q_list, site_combn, nonspec_type, model)
+export_model('model.txt', n, q_list, site_combn, model)
 
 # The exported model can be imported:
 # model <- import_model('model.txt')
