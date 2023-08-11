@@ -73,6 +73,9 @@ model <- infer_model(genotypes, y, site_combn)
 #   R2 : Model fit
 #   residual : Residual for each genotype
 
+# Inferred effects; effects in each site-combination are arranged in an array.
+e_site_combn <- parse_effects_by_site_combn(site_combn, model$e, TRUE)
+
 # Model-predicted phenotypes.
 p <- y - model$residual
 
