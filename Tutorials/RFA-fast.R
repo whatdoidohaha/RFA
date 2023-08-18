@@ -3,17 +3,16 @@
 # using an example genetic architecture consisting of four sites and a variable
 # number of states per site. Instead of jointly inferring reference-free
 # effects with nonspecific epistasis, this script asks the user to specify
-# the nonspecific epistasis parameters. It then performs a generalized linear
+# the nonspecific epistasis parameters. It then performs generalized linear
 # regression using the specified function as link function. The highly
 # optimized R package glmnet makes this inference fast and robust. Once the
 # reference-free effects are inferred, the nonspecific epistasis parameters can
-# be optimized with the effects fixed. This two-step procedure can be iterated
-# to further improve the model fit.
+# be optimized while holding the effects fixed. This two-step procedure can be
+# iterated to further improve the model fit.
 #
 # We recommend first performing unregularized regression in the worflow RFA
 # to identify suitable nonspecific epistasis parameters. This may be possible
-# using a first-order reference-free model if it fits the data sufficiently well
-# or may require a second-order model.
+# using a first-order model or may require a second-order model.
 #
 # Written in R version 4.3.1.
 # Requires R packages abind (1.4-5), glmnet (4.1-7), and lbfgs (1.2.1.2).
@@ -68,12 +67,12 @@ model <- infer_model(genotypes, y, site_combn)
 #     effects (default TRUE)
 #
 # A list with the following elements is returned:
-#   nonspec_param : The nonspecific epistasis parameters used
-#   e : The inferred reference-free effects
+#   nonspec_param : Nonspecific epistasis parameters
+#   e : Reference-free effects on genetic score
 #   R2 : Model fit
 #   residual : Residual for each genotype
 
-# Inferred effects; effects in each site-combination are arranged in an array.
+# Arranging the effects for each site-combination in an array.
 e_site_combn <- parse_effects_by_site_combn(site_combn, model$e, TRUE)
 
 # Model-predicted phenotypes.
