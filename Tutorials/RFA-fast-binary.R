@@ -70,7 +70,7 @@ X <- construct_phenotype_operator(genotypes, site_combn)
 s <- as.vector(X %*% model$e)
 
 # Genetic score can be transformed into predicted phenotype/
-p <- apply_sigmoid(s, L, R)
+p <- apply_nonspecific_epistasis(s, model$nonspec_param)
 
 # Check for any systematic misfit.
 plot(p, y, cex = 0.5, col = rgb(0, 0, 0, 0.5), pch = 16L)
